@@ -124,6 +124,28 @@ export const WithBadge: Story = {
 
       <Card>
         <CardHeader>
+          <CardTitle>Deployment Successful</CardTitle>
+          <CardAction>
+            <Badge variant="success">Live</Badge>
+          </CardAction>
+          <CardDescription>
+            Your latest changes are now live in production.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p className="text-sm text-muted-foreground">
+            Version 2.4.1 was deployed successfully with zero downtime.
+          </p>
+        </CardContent>
+        <CardFooter>
+          <Button size="sm" variant="outline">
+            View deployment
+          </Button>
+        </CardFooter>
+      </Card>
+
+      <Card>
+        <CardHeader>
           <CardTitle>Pro Plan</CardTitle>
           <CardAction>
             <Badge variant="secondary">Popular</Badge>
